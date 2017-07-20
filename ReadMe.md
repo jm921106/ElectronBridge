@@ -11,7 +11,7 @@ Web Browser (Chrome, IE : Web Service) 에서 Raspiberry PI에 <br>
 
 - 방법 1 : USB to Serial 통신 : 추가적인 라즈비안 OS 조작이 필요 없음
 - 방법 2 : BlueTooth 통신 : 라즈비안 OS 조작이 필요
-- 방법 3 : Local Wifi 통신 : 라즈비안 OS 조작이 필요 (포퍼먼스가 상당히 느림)
+- 방법 3 : Local Wifi 통신 : 라즈비안 OS 조작이 필요 (포퍼먼스 안좋음)
 
 ## 단계
 
@@ -23,9 +23,15 @@ Web Browser (Chrome, IE : Web Service) 에서 Raspiberry PI에 <br>
 
 현재는 윈도우만 지원 예정
 
+## 서드 파티
+
+- BootStrap
+- Jquery
+- VueJS(예정)
+
 ## Electron 시작해보기
 
-##### 구성 요소
+**구성 요소**
 
 ```
     app/
@@ -34,10 +40,10 @@ Web Browser (Chrome, IE : Web Service) 에서 Raspiberry PI에 <br>
         index.html
 ```
 
-main.js 가 package.js에 설정되어 있지 않으면
+main.js 가 package.js에 설정되어 있지 않으면 <br>
 자동으로 같은 디렉토리의 index.js를 로드
 
-##### 실행 방법
+**실행 방법**
 
 npm을 이용해 전역으로 electron 설치
 
