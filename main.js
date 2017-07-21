@@ -12,13 +12,13 @@ const path = require('path');
 const url = require('url');
 
 // [TODO : working] electron communication listener
-require('./app/modules/communicate/indexListener');
+require('./app/modules/ipc/indexListener');
 
 // [TODO : working] websocket echo test
-// require('./app/modules/websocket/WebSocketServer');
+require('./app/modules/websocket/WebSocketServer');
 
 // [TODO : working] serial communication to raspberryPI
-// require('./app/modules/serial/serial');
+require('./app/modules/serial/serial');
 
 // 윈도우 객체를 전역에 유지합니다. 만약 이렇게 하지 않으면
 // 자바스크립트 GC가 일어날 때 창이 멋대로 닫혀버립니다.

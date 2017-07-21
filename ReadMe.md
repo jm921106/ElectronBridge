@@ -120,3 +120,6 @@ https://github.com/electron/electron/blob/master/docs-translations/ko-KR/tutoria
 
 electron-packager : electron을 실행파일로 묶어서 export 해주는 npm
 electron-builder : electron build를 관리해주는 npm
+
+[참조]
+https://creamycode.github.io/javascript/2016/10/20/Electron_Build/

@@ -37,5 +37,4 @@ syncMsgBtn.addEventListener('click', function () {
 
 // serial test
 
-// Error
 const serialport = require('serialport')

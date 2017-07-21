@@ -6,3 +6,6 @@
 
 # bower
 /app/src/bower_components/
+
+# build
+/dist/

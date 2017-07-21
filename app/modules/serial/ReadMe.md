@@ -45,6 +45,8 @@ bind.gyp 파일을 추가하여 노드의 최신 버전을 지원해야합니다
 
 **관리자권한 powershell에서 실행**
 
+electron rebuild 하는데 필요
+
 ```
     npm install --global --production windows-build-tools
 ```

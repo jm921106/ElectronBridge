@@ -17,13 +17,14 @@
   "author": "SuperMoon",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^1.6.11",
+    "asar": "^0.13.0",
+    "electron-installer-squirrel-windows": "^1.3.0",
+    "electron-packager": "^8.7.2",
     "electron-rebuild": "^1.5.11"
   },
   "dependencies": {
+    "electron": "^1.6.11",
     "serialport": "^4.0.7",
-    "electron-connect": "^0.6.1",
-    "electron-packager": "^8.7.2",
     "websocket": "^1.0.24"
   }
 }
