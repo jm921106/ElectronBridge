@@ -15,9 +15,14 @@ Web Browser (Chrome, IE : Web Service) 에서 Raspiberry PI에 <br>
 
 ## 단계
 
-1. 학생이 직접 메뉴얼에 따라 라즈베리파이 내에 라즈비안 설치 작업이 필요
-2. 설치가 끝나면 로지콩 메뉴얼에 따라
-3. 라즈베리 펌웨어 설치 및 운영체제 (window) 드라이버 설치
+1. LogiCong 메뉴얼에 따라 라즈베리파이 내에 라즈비안 설치
+2. LogiCong 홈페이지에서 Electron Window Program 설치
+3. Electron Window Program 실행
+4. 라즈베리파이와 PC 연결
+5. 필요에 따라 드라이버 설치 (드라이버는 적절한 드라이버로 알아볼 것 )
+6. 라즈베리파이 펌웨어 설치 ( 최초 1회만 진행 )
+    Electron > RaspberryPI (py file 전달)
+7. 설치가 완료됬다면 연결
 
 ## 지원 하드웨어
 

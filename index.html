@@ -2,12 +2,26 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>헬로 월드!</title>
+    <title>Electron Bridge :)</title>
+    <!--Css-->
+    <link href="app/src/custom/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="app/src/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <h1>헬로 월드!</h1>
-    이 애플리케이션은 node <script>document.write(process.version)</script>,
-    Chrome <script>document.write(process.versions.chrome)</script>,
-    Electron <script>document.write(process.versions.electron)</script>을 사용합니다.
+    <h1>Hello World ! I'm Electron Bridge :)</h1>
+    <!--이 애플리케이션은 node <script>document.write(process.version)</script>,-->
+    <!--Chrome <script>document.write(process.versions.chrome)</script>,-->
+    <!--Electron <script>document.write(process.versions.electron)</script>을 사용합니다.-->
+
+    <div>
+        <h1>서버 상태화면</h1>
+        <button id="async-msg">async-button</button>
+        <button id="sync-msg">sync-button</button>
+        <p id="server-status"></p>
+    </div>
 </body>
+<!--Script-->
+<script src="app/src/require.js"></script>
+<!--<script src="app/src/bower_components/jquery/dist/jquery.min.js"></script>-->
+<!--<script src="app/src/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>-->
 </html>

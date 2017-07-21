@@ -1,6 +1,24 @@
-const {app, BrowserWindow} = require('electron')
-const path = require('path')
-const url = require('url')
+/**
+ * main.js
+ *
+ * 목 적 : Electron의 Main Process
+ * 문 제 :
+ * 일 자 : 2017.07.20
+ * 작 성 : SuperMoon
+ */
+
+const {app, BrowserWindow} = require('electron');
+const path = require('path');
+const url = require('url');
+
+// [TODO : working] electron communication listener
+require('./app/modules/communicate/indexListener');
+
+// [TODO : working] websocket echo test
+// require('./app/modules/websocket/WebSocketServer');
+
+// [TODO : working] serial communication to raspberryPI
+// require('./app/modules/serial/serial');
 
 // 윈도우 객체를 전역에 유지합니다. 만약 이렇게 하지 않으면
 // 자바스크립트 GC가 일어날 때 창이 멋대로 닫혀버립니다.
@@ -8,17 +26,27 @@ let win
 
 function createWindow() {
     // 새로운 브라우저 창을 생성합니다.
-    win = new BrowserWindow({width: 800, height: 600})
+    win = new BrowserWindow({
+        width: 1000,
+        height: 600,
+        // attr
+        // frame: false, (titleBarStyle: 'hidden' in mac)
+        transparent: true, // true : fix , false : resizable
+        backgroundColor: '#2e2c29',
+    })
 
     // 그리고 현재 디렉터리의 index.html을 로드합니다.
     win.loadURL(url.format({
         pathname: path.join(__dirname, 'index.html'),
         protocol: 'file:',
         slashes: true
-    }))
+    }));
+
+    // 클릭 무시
+    // win.setIgnoreMouseEvents(true)
 
     // 개발자 도구를 엽니다.
-    // win.webContents.openDevTools()
+    win.webContents.openDevTools()
 
     // 창이 닫히면 호출됩니다.
     win.on('closed', () => {

@@ -1,10 +1,27 @@
 {
-  "name": "your-app",
-  "version": "0.1.0",
+  "name": "electron-physical-bridge",
+  "version": "6.10.3",
+  "description": "electron bridge websocket & serial test",
   "main": "main.js",
-  "dependencies": {
+  "scripts": {
+    "start": "electron .",
+    "install": "electron-rebuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:johnny-five-io/electron-serialport.git"
+  },
+  "keywords": [
+    "Electron"
+  ],
+  "author": "SuperMoon",
+  "license": "MIT",
+  "devDependencies": {
     "electron": "^1.6.11",
-    "electron-builder": "^19.16.0",
+    "electron-rebuild": "^1.5.11"
+  },
+  "dependencies": {
+    "serialport": "^4.0.7",
     "electron-connect": "^0.6.1",
     "electron-packager": "^8.7.2",
     "websocket": "^1.0.24"

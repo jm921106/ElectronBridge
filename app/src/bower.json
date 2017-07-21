@@ -1,0 +1,25 @@
+{
+  "name": "electron-bridge-front",
+  "homepage": "https://github.com/jm921106/electron-physical-bridge",
+  "authors": [
+    "supermoon"
+  ],
+  "description": "electron-front",
+  "main": "index",
+  "keywords": [
+    "electron-front"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7"
+  }
+}

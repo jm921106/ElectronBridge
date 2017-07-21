@@ -1,2 +1,8 @@
+# webstorm
 /.idea/
+
+# npm
 /node_modules/
+
+# bower
+/app/src/bower_components/
